@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 1;
+  background-color: hsl(210, 46%, 95%);
+}
+
+/***************************************/
+/*General*/
+/***************************************/
+
+.mb--md {
+  margin-bottom: 2.8rem;
+}
+.mb--high {
+  margin-bottom: 3.8rem;
+}
+
+/***************************************/
+/*Testimonials*/
+/***************************************/
+
+.testimonials-grid {
+  margin: 9.6rem auto 4.6rem;
+  max-width: 144rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.9fr;
+  column-gap: 3.6rem;
+  row-gap: 3rem;
+}
+.testimonial-card {
+  padding: 3.6rem 3.8rem 3.2rem;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+.testimonial-card--daniel {
+  background-color: hsl(263, 55%, 52%);
+  grid-column-end: span 2;
+  position: relative;
+}
+.testimonial-card--jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.testimonial-card--kira {
+  background-color: hsl(0, 0%, 100%);
+  grid-row-end: span 2;
+}
+.testimonial-card--jeanette {
+  background-color: hsl(0, 0%, 100%);
+}
+.testimonial-card--patrick {
+  background-color: hsl(219, 29%, 14%);
+  grid-column-end: span 2;
+}
+
+.quotation-icon {
+  position: absolute;
+  display: block;
+  width: 12.8rem;
+  top: 0;
+  right: 15%;
+  z-index: -1;
+  /* transform: translate(-50%, -50%); */
+}
+
+.testimonial-info {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.testimonial-img {
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: 50%;
+}
+
+.testimonial-info-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.testimonial-info-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.testimonial-info-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.testimonial-excrept {
+  font-size: 2.6rem;
+  line-height: 1.3;
+  z-index: 1;
+}
+.testimonial-quote {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/***************************************/
+/*Font-Colors*/
+/***************************************/
+
+.testimonial-font-dark .testimonial-info-name {
+  color: hsl(217, 19%, 35%);
+}
+.testimonial-font-light .testimonial-info-name {
+  color: hsl(0, 0%, 81%);
+}
+.testimonial-font-dark .testimonial-info-title {
+  color: hsl(217, 19%, 35%, 0.5);
+}
+.testimonial-font-light .testimonial-info-title {
+  color: hsl(0, 0%, 81%, 0.5);
+}
+.testimonial-font-dark .testimonial-excrept {
+  color: hsl(217, 19%, 35%);
+}
+.testimonial-font-light .testimonial-excrept {
+  color: hsl(0, 0%, 100%);
+}
+.testimonial-font-dark .testimonial-quote {
+  color: hsl(217, 19%, 35%, 0.7);
+}
+.testimonial-font-light .testimonial-quote {
+  color: hsl(0, 0%, 100%, 0.7);
+}
